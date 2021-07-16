@@ -269,9 +269,12 @@ Faça a função da chave feedback com arrow functions!
 
 Parâmetros:
 - Uma string;
-Comportamento:
-const estudante = createStudent('Leandrão, o Lobo Solitário')
 
+Comportamento:
+
+- const estudante = createStudent('Leandrão, o Lobo Solitário')
+
+<br/>
 estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
 estudante.feedback() // Retorna: 'Eita pessoa boa!'
 
