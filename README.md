@@ -441,7 +441,8 @@ Parâmetros:
 - Nenhum.
 
 Comportamento:
-myCounter() // Retorna: [0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3];
+
+- myCounter() // Retorna: [0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3];
 
 #### Resposta:
 
