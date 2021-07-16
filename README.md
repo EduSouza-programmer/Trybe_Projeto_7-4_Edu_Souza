@@ -275,7 +275,7 @@ Comportamento:
 - const estudante = createStudent('Leandrão, o Lobo Solitário')
 
 <br/>
-estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
+estudante.name // Retorna: 'Leandrão, o Lobo Solitário' <br/>
 estudante.feedback() // Retorna: 'Eita pessoa boa!'
 
 #### Resposta:
