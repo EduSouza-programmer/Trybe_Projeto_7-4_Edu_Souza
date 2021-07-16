@@ -402,8 +402,9 @@ Parâmetros:
 - Um número inteiro;
 
 Comportamento:
-calculator.add(1, 1) // Retorno: 2;
-calculator.div(3, 2) // Retorno: 1;
+
+- calculator.add(1, 1) // Retorno: 2;
+- calculator.div(3, 2) // Retorno: 1;
 
 #### Resposta:
 
