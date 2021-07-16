@@ -330,7 +330,7 @@ productDetails('Alcool gel', 'Máscara') // Retorna: <br/>
 ]
 ```
 <br/>
-OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.
+
 
 #### Resposta:
 
