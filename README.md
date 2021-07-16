@@ -110,15 +110,15 @@ module.exports = average;
 
 ### 2°
 
-  A função numbers recebe um array (tamanho variável) e retorna true se todos os parâmetros forem do tipo 'number' e false caso contrário.
+A função numbers recebe um array (tamanho variável) e retorna true se todos os parâmetros forem do tipo 'number' e false caso contrário.
 
-  Parâmetros:
-    - Um array. Exemplos: [1, 2]; [1, 2, 3, 4, 5]; [1, 2, 'a']; [].
-  Comportamento:
-    - numbers([2, 3, 4]); // Retorna: true
-    - numbers([2, 'errado', 5]); // Retorna: false
+Parâmetros:
+- Um array. Exemplos: [1, 2]; [1, 2, 3, 4, 5]; [1, 2, 'a']; [].
+Comportamento:
+- numbers([2, 3, 4]); // Retorna: true
+- numbers([2, 'errado', 5]); // Retorna: false
 
-  OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.
+OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.
 
 #### Resposta:
 
@@ -157,19 +157,20 @@ describe('#numbers', () => {
 
 ### 3°
 
-  Use template literals para escrever uma função que,
-  recebe seu nome e sua idade e retorna o parágrafo descrito abaixo.
-  Caso a função seja chamada sem nenhum parâmetro, o valor undefined deve ser retornado.
+Use template literals para escrever uma função que,
+recebe seu nome e sua idade e retorna o parágrafo descrito abaixo.
+Caso a função seja chamada sem nenhum parâmetro, o valor undefined deve ser retornado.
 
-  Parâmetros:
-    - Uma string;
-    - Um número.
-  Comportamento:
-    vqv(Tunico, 30) // Retorna:
-      'Oi, meu nome é Tunico!
-      Tenho 30 anos,
-      trabalho na Trybe e mando muito em programação!
-      #VQV!'
+Parâmetros:
+- Uma string;
+- Um número.
+
+Comportamento:
+- vqv(Tunico, 30) // Retorna:
+- 'Oi, meu nome é Tunico!
+- Tenho 30 anos,
+- trabalho na Trybe e mando muito em programação!
+- #VQV!'
 
 #### Resposta:
 
@@ -198,22 +199,22 @@ module.exports = vqv;
 #
 ### 4°
 
- Essa função recebe o raio de um círculo e retorna um objeto contendo suas informações (Raio, Área e Circunferência).
-  Se não for especificado um raio, a função retorna undefined.
-  Elabore testes para verificar se a função está correta.
+Essa função recebe o raio de um círculo e retorna um objeto contendo suas informações (Raio, Área e Circunferência).
+Se não for especificado um raio, a função retorna undefined.
+Elabore testes para verificar se a função está correta.
 
-  Parâmetros:
-    - Um número inteiro. Exemplos: 1; 3;
-  Comportamento:
-    - circle(1) // Retorno: {radius: 1, area: 3.14, circumference: 6.28}
-    - circle(7) // Retorno: {radius: 7, area: 153.86, circumference: 43.96}
-    - circle(3) // Retorno: {radius: 3, area: 28,26, circumference: 18.84}
+Parâmetros:
+- Um número inteiro. Exemplos: 1; 3;
+Comportamento:
+- circle(1) // Retorno: {radius: 1, area: 3.14, circumference: 6.28}
+- circle(7) // Retorno: {radius: 7, area: 153.86, circumference: 43.96}
+- circle(3) // Retorno: {radius: 3, area: 28,26, circumference: 18.84}
 
-  DICA: Números de ponto flutuante em JavaScript são imprecisos!  Para testar, vá no seu navegador e faça `0.2 + 0.1`.
-        Uma solução pra isso pode ser fazer a soma no seguinte formato: `parseFloat((0.2 + 0.1).toPrecision(2))`.
-        Use esse conhecimento para te ajudar a lidar com possíveis problemas que esses testes trarão!
+DICA: Números de ponto flutuante em JavaScript são imprecisos!  Para testar, vá no seu navegador e faça `0.2 + 0.1`.
+Uma solução pra isso pode ser fazer a soma no seguinte formato: `parseFloat((0.2 + 0.1).toPrecision(2))`.
+Use esse conhecimento para te ajudar a lidar com possíveis problemas que esses testes trarão!
 
-  OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.`Paolillo, Lucas`.
+OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.`Paolillo, Lucas`.
 
 #### Resposta:
 
@@ -259,20 +260,20 @@ describe('#circle', () => {
 #
 ### 5°
 
- Dada uma função chamada createStudent que recebe como parâmetro um nome,
-  retorne um objeto que contenha duas chaves:
-    (1) name, contendo o nome passado como parâmetro;
-    (2) feedback, contendo uma função que retorna a frase 'Eita pessoa boa!' ao ser chamada.
+Dada uma função chamada createStudent que recebe como parâmetro um nome,
+retorne um objeto que contenha duas chaves:
+(1) name, contendo o nome passado como parâmetro;
+(2) feedback, contendo uma função que retorna a frase 'Eita pessoa boa!' ao ser chamada.
 
-  Faça a função da chave feedback com arrow functions!
+Faça a função da chave feedback com arrow functions!
 
-  Parâmetros:
-    - Uma string;
-  Comportamento:
-    const estudante = createStudent('Leandrão, o Lobo Solitário')
+Parâmetros:
+- Uma string;
+Comportamento:
+const estudante = createStudent('Leandrão, o Lobo Solitário')
 
-    estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
-    estudante.feedback() // Retorna: 'Eita pessoa boa!'
+estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
+estudante.feedback() // Retorna: 'Eita pessoa boa!'
 
 #### Resposta:
 
@@ -299,30 +300,30 @@ module.exports = createStudent;
 #
 ### 6°
 
- Dadas duas strings que representam nomes de produtos, retorne um array contendo dois objetos com os detalhes dos respectivos produtos.
+Dadas duas strings que representam nomes de produtos, retorne um array contendo dois objetos com os detalhes dos respectivos produtos.
 
-  Parâmetros:
-  - Uma string;
-  - Uma string;
+Parâmetros:
+- Uma string;
+- Uma string;
 
-  Comportamento:
-  productDetails('Alcool gel', 'Máscara') // Retorna:
-  [
-    {
-      name: 'Alcool gel'
-      details: {
-        productId: 'Alcool gel123'
-      }
-    },
-    {
-      name: 'Máscara'
-      details: {
-        productId: 'Máscara123'
-      }
+Comportamento:
+productDetails('Alcool gel', 'Máscara') // Retorna:
+[
+  {
+    name: 'Alcool gel'
+    details: {
+      productId: 'Alcool gel123'
     }
-  ]
+  },
+  {
+    name: 'Máscara'
+    details: {
+      productId: 'Máscara123'
+    }
+  }
+]
 
-  OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.
+OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.
 
 #### Resposta:
 
@@ -376,24 +377,24 @@ describe('#productDetails', () => {
 #
 ### 7°
 
- Desenvolva um objeto calculator que possui quatro chaves:
-    - add;
-    - mult;
-    - div;
-    - sub.
-  Para cada uma delas atribua uma função que realiza a respectiva operação.
-  A função deve receber dois inteiros e retornar um inteiro.
-  Os resultados das divisões devem sempre ser arredondados para baixo.
+Desenvolva um objeto calculator que possui quatro chaves:
+  - add;
+  - mult;
+  - div;
+  - sub.
+Para cada uma delas atribua uma função que realiza a respectiva operação.
+A função deve receber dois inteiros e retornar um inteiro.
+Os resultados das divisões devem sempre ser arredondados para baixo.
 
-  Faça as funções com arrow functions!
+Faça as funções com arrow functions!
 
-  Parâmetros:
-  - Um número inteiro;
-  - Um número inteiro;
+Parâmetros:
+- Um número inteiro;
+- Um número inteiro;
 
-  Comportamento:
-  calculator.add(1, 1) // Retorno: 2;
-  calculator.div(3, 2) // Retorno: 1;
+Comportamento:
+calculator.add(1, 1) // Retorno: 2;
+calculator.div(3, 2) // Retorno: 1;
 
 #### Resposta:
 
@@ -422,15 +423,15 @@ module.exports = calculator;
 #
 ### 8°
 
-   A função myCounter possui dois loops aninhados que inserem valores dentro de um array.
-  Como podemos perceber, eles vão adicionando valores ao array até sua condição de parada.
-  Corrija o código abaixo para que a função retorne o array correto.
+  A função myCounter possui dois loops aninhados que inserem valores dentro de um array.
+Como podemos perceber, eles vão adicionando valores ao array até sua condição de parada.
+Corrija o código abaixo para que a função retorne o array correto.
 
-  Parâmetros:
-  - Nenhum.
+Parâmetros:
+- Nenhum.
 
-  Comportamento:
-  myCounter() // Retorna: [0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3];
+Comportamento:
+myCounter() // Retorna: [0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3];
 
 #### Resposta:
 
@@ -464,47 +465,47 @@ module.exports = myCounter;
 ### 9°
 
 Você é responsável por escrever o código do sistema de pedidos de um restaurante. Deve ser possível, através desse sistema, cadastrar um menu. Dado que um menu foi cadastrado, o sistema deve disponibilizar um objeto através do qual se consegue:
-  - ler o menu cadastrado;
-  - fazer pedidos;
-  - verificar o que foi pedido;
-  - somar o valor da conta.
+- ler o menu cadastrado;
+- fazer pedidos;
+- verificar o que foi pedido;
+- somar o valor da conta.
 
-  A estrutura deste código e deste objeto já foi definida e você irá implementá-la.
-  Abaixo você verá uma série de testes e passos que devem ser, NECESSARIAMENTE, feitos em ordem para o bom desenvolvimento do sistema. Eles guiarão você pelo desenvolvimento.
+A estrutura deste código e deste objeto já foi definida e você irá implementá-la.
+Abaixo você verá uma série de testes e passos que devem ser, NECESSARIAMENTE, feitos em ordem para o bom desenvolvimento do sistema. Eles guiarão você pelo desenvolvimento.
 
-  Parâmetros:
-  - Um objeto. Exemplos: { food: {'coxinha': 3.9, 'sopa': 9.9}, drink: {'agua': 3.9, 'cerveja': 6.9} }.
-  Comportamento:
+Parâmetros:
+- Um objeto. Exemplos: { food: {'coxinha': 3.9, 'sopa': 9.9}, drink: {'agua': 3.9, 'cerveja': 6.9} }.
+Comportamento:
 
-  const meuRestaurante = createMenu({ food: {'coxinha': 3.9, 'sopa': 9.9}, drink: {'agua': 3.9, 'cerveja': 6.9} }).
+const meuRestaurante = createMenu({ food: {'coxinha': 3.9, 'sopa': 9.9}, drink: {'agua': 3.9, 'cerveja': 6.9} }).
 
-  meuRestaurante.fetchMenu() // Retorno: { food: {'coxinha': 3.9, 'sopa': 9.9}, drink: {'agua': 3.9, 'cerveja': 6.9} }
+meuRestaurante.fetchMenu() // Retorno: { food: {'coxinha': 3.9, 'sopa': 9.9}, drink: {'agua': 3.9, 'cerveja': 6.9} }
 
-  meuRestaurante.order('coxinha') // Retorno: undefined
+meuRestaurante.order('coxinha') // Retorno: undefined
 
-  meuRestaurante.consumption // Retorno: ['coxinha']
+meuRestaurante.consumption // Retorno: ['coxinha']
 
-  meuRestaurante.pay() // Retorno: 3.9
+meuRestaurante.pay() // Retorno: 3.9
 
-  Uma função createMenu retorna um objeto com as seguintes características:
-  - Uma chave `fetchMenu` retorna o objeto que a função `createMenu` recebe por parâmetro. O menu tem sempre duas chaves, `food` e `drink`, no seguinte formato:
+Uma função createMenu retorna um objeto com as seguintes características:
+- Uma chave `fetchMenu` retorna o objeto que a função `createMenu` recebe por parâmetro. O menu tem sempre duas chaves, `food` e `drink`, no seguinte formato:
 
-  const meuRestaurante = createMenu({
-    food: {'coxinha': 3.90, 'sanduiche', 9.90},
-    drinks: {'agua': 3.90, 'cerveja': 6.90}
-  });
+const meuRestaurante = createMenu({
+  food: {'coxinha': 3.90, 'sanduiche', 9.90},
+  drinks: {'agua': 3.90, 'cerveja': 6.90}
+});
 
-  meuRestaurante.fetchMenu() // Retorno: Menu acima
+meuRestaurante.fetchMenu() // Retorno: Menu acima
 
-  - Uma chave `consumption` que contém um array de strings, com cada string sendo a chave de um pedido. Por exemplo: ['coxinha', 'cerveja']
+- Uma chave `consumption` que contém um array de strings, com cada string sendo a chave de um pedido. Por exemplo: ['coxinha', 'cerveja']
 
-  - Uma chave `order` que tem uma função que, recebida uma string como parâmetro, adiciona essa string à lista salva em `consumption`.
+- Uma chave `order` que tem uma função que, recebida uma string como parâmetro, adiciona essa string à lista salva em `consumption`.
 
-  - Uma chave `pay` que, quando chamada, invoca uma função que soma o valor de todos os pedidos e dá o preço com acréscimo de 10%.
+- Uma chave `pay` que, quando chamada, invoca uma função que soma o valor de todos os pedidos e dá o preço com acréscimo de 10%.
 
-  IMPORTANTE: FAÇA OS TESTES E PASSOS DE ACORDO COM A ORDEM INDICADA!
+IMPORTANTE: FAÇA OS TESTES E PASSOS DE ACORDO COM A ORDEM INDICADA!
 
-  OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.
+OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.
 
 #### Resposta:
 
